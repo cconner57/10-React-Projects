@@ -20,7 +20,7 @@
 	margin: 30vh 0 0;
 	font-size: 4rem;
 	font-family: 'Mountains of Christmas', cursive;
-	transition: all 0.3s;
+	transition: all 0.2s;
 }
 
 .App__time,
@@ -31,7 +31,7 @@
 	width: 35%;
 	max-width: 70%;
 	font-family: 'Roboto Slab', serif;
-	transition: all 0.3s;
+	transition: all 0.2s;
 }
 
 .App__time > h1 {
