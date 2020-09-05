@@ -1,0 +1,42 @@
+[
+	{
+		"Question": "How many episodes are in season 1?",
+		"Choice1": "7 episodes",
+		"Choice2": "8 episodes",
+		"Choice3": "9 episodes",
+		"Choice4": "10 episodes",
+		"Answer": "8 episodes"
+	},
+	{
+		"Question": "What is the Mandalorian's name?",
+		"Choice1": "Greef Karga",
+		"Choice2": "Din Djarin",
+		"Choice3": "Fennec Shand",
+		"Choice4": "He doesn't have a name",
+		"Answer": "Din Djarin"
+	},
+	{
+		"Question": "What does Mando trade with the Jawas who stripped his ship?",
+		"Choice1": "The Horn",
+		"Choice2": "The Claw",
+		"Choice3": "The Egg",
+		"Choice4": "The Child",
+		"Answer": "The Egg"
+	},
+	{
+		"Question": "Which character is a former Rebel shocktrooper?",
+		"Choice1": "Greef Karga",
+		"Choice2": "Cara Dune",
+		"Choice3": "Peli Motto",
+		"Choice4": "Ranzar Malk",
+		"Answer": "Cara Dune"
+	},
+	{
+		"Question": "How old is Baby Yoda?",
+		"Choice1": "10",
+		"Choice2": "30",
+		"Choice3": "50",
+		"Choice4": "100",
+		"Answer": "50"
+	}
+]

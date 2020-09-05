@@ -1,38 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #abe9cd;
+	background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background: hsl(0, 0%, 93%);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	font-family: 'Overpass', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Container p {
+	font-size: 44px;
+	margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container img {
+	width: 250px;
+	height: 200px;
+	margin: 10px auto;
+}
+
+.Container h5 {
+	font-size: 23px;
+	margin: 30px 30px 0;
+}
+
+.Container h1 {
+	margin: auto 0;
+}
+
+.Container__question {
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Container__choices {
+	display: flex;
+	flex-direction: column;
+  align-items: flex-start;
+	height: 150px;
+	margin: 30px auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Container__choices label {
+	padding: 5px 0px 0 5px;
+	font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.Container__choices input[type='radio'] {
+	margin-right: 5px;
+	border: 0px;
+	width: 30px;
+	height: 1.5em;
+	cursor: pointer;
+}
+
+.Container button {
+	border: 2px solid black;
+	border-radius: 7px;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 0px auto;
+}
+
+.Container button:hover {
+	background: hsl(194, 80%, 90%);
+	box-shadow: 0 0 40px 0 hsla(194, 80%, 70%, 0.8);
+	cursor: pointer;
+}
+
+.Container button:focus {
+	outline: 0;
 }
