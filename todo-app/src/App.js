@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const [newTodo, setNewTodo] = useState('');
+	const [todos, setTodos] = useState(['Orange juice', 'Cheese', 'Carrot']);
+
+	const handleFormSubmit = (e) => {
+		e.preventDefault();
+		setTodos([...todos, newTodo]);
+		setNewTodo('');
+	};
+
+	const handleDelete = (todoValue) => {
+		setTodos((currentTodos) => {
+			return currentTodos.filter((todo) => todo !== todoValue);
+		});
+	};
+
+	return (
+		<div className='Todo'>
+			<div className='Todo__container'>
+				<form className='Todo__form' onSubmit={handleFormSubmit}>
+					<h1>Shopping List</h1>
+					<input
+						type='text'
+						className='Todo__input'
+						value={newTodo}
+						placeholder='Enter todo'
+						onChange={(e) => setNewTodo(e.target.value)}
+					/>
+				</form>
+				<ul className='Todo__list'>
+					{todos.map((todo, key) => (
+						<li
+							key={key}
+							className='Todo__item'
+							onClick={() => handleDelete(todo)}>
+							{todo}
+						</li>
+					))}
+				</ul>
+			</div>
+		</div>
+	);
+};
 
 export default App;

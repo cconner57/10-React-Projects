@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Grandstander', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Todo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  width: 100vw;
+  background: url('./bg-image.jpeg') no-repeat center;
+  background-size: 100% 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Todo__container {
+  border: 3px solid black;
+  height: 500px;
+  padding: 40px 50px 0;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, .8);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Todo__form {
   display: flex;
-  flex-direction: column;
+	flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Todo__form h1 {
+	color: rgb(40, 40, 40);
+  text-decoration: underline;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo__input {
+	width: 15rem;
+	height: 2rem;
+	padding-left: 5px;
+	border-radius: 7px;
+}
+
+.Todo__input:focus {
+  outline: none;
+}
+
+.Todo__list {
+  display: flex;
+	flex-direction: column;
+	margin: 20px 10px 10px;
+  color: rgb(100, 100, 100);
+  height: 325px;
+  width: 250px;
+  overflow: auto;
+}
+
+.Todo__item {
+  position: relative;
+  margin-left: 25px;
+	font-size: 1.35rem;
+	list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.Todo__item:hover {
+	cursor: pointer;
+	color: rgba(255, 0, 0, 0.75);
+}
+
+.Todo__item:hover:after {
+	position: absolute;
+	content: '❌';
+	top: -3px;
+	left: -20px;
+	font-size: 0.8rem;
 }
