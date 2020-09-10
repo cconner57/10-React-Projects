@@ -3,7 +3,7 @@ import './App.css';
 
 const App = () => {
 	const [newTodo, setNewTodo] = useState('');
-	const [todos, setTodos] = useState(['Orange juice', 'Cheese', 'Carrot']);
+	const [todos, setTodos] = useState(['Orange juice', 'Cheese', 'Carrots']);
 
 	const handleFormSubmit = (e) => {
 		e.preventDefault();
