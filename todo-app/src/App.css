@@ -13,30 +13,30 @@
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-  width: 100vw;
-  background: url('./bg-image.jpeg') no-repeat center;
-  background-size: 100% 100%;
+	width: 100vw;
+	background: url('./bg-image.jpeg') no-repeat center;
+	background-size: 100% 100%;
 }
 
 .Todo__container {
-  border: 3px solid black;
-  height: 500px;
-  padding: 40px 50px 0;
-  border-radius: 7px;
-  background-color: rgba(255, 255, 255, .8);
+	border: 3px solid black;
+	height: 500px;
+	padding: 40px 50px 0;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .Todo__form {
-  display: flex;
+	display: flex;
 	flex-direction: column;
-  align-items: center;
+	align-items: center;
 }
 
 .Todo__form h1 {
 	color: rgb(40, 40, 40);
-  text-decoration: underline;
-  margin-bottom: 15px;
-  font-size: 2.5rem;
+	text-decoration: underline;
+	margin-bottom: 15px;
+	font-size: 2.5rem;
 }
 
 .Todo__input {
@@ -47,25 +47,25 @@
 }
 
 .Todo__input:focus {
-  outline: none;
+	outline: none;
 }
 
 .Todo__list {
-  display: flex;
+	display: flex;
 	flex-direction: column;
 	margin: 20px 10px 10px;
-  color: rgb(100, 100, 100);
-  height: 325px;
-  width: 250px;
-  overflow: auto;
+	color: rgb(100, 100, 100);
+	height: 325px;
+	width: 250px;
+	overflow: auto;
 }
 
 .Todo__item {
-  position: relative;
-  margin-left: 25px;
+	position: relative;
+	margin-left: 25px;
 	font-size: 1.35rem;
 	list-style-type: none;
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .Todo__item:hover {
